@@ -33,7 +33,7 @@ public class Steganography {
 		 */
 		public void writeByte(int c) throws IOException {
 
-			if (pos > ind.length - 4) throw new IOException("Overflow of the output buffer!");
+			if (pos > ind.length - 4) throw new IOException("Overflow of output buffer!");
 
 			for (int i = 6; i >= 0; i -= 2) {
 				int p = ind[pos ++];
@@ -78,7 +78,7 @@ public class Steganography {
 		 */
 		public int readByte() throws IOException {
 
-			if (pos > ind.length - 4) throw new IOException("End of the input buffer!");
+			if (pos > ind.length - 4) throw new IOException("End of input buffer!");
 			int c = 0;
 			for (int i = 0; i < 4; ++ i) {
 				int p = ind[pos ++];

@@ -1,7 +1,11 @@
+/doc/*
+/out/*
+/lib/*
+
 # Compiled class file
 *.class
 
-# Package Files #
+# Package Files
 *.jar
 *.war
 *.nar
